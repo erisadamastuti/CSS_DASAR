@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Combinator Selector</title>
+
+    <style>
+        div p {
+            color: red;
+        }
+        div > p {
+            background-color: yellow;
+        }
+        div + p {
+            background-color: darkgray;
+        }
+        div ~ p {
+            color: cyan;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <p>1. Selector div p memilih semua elemen <p> yang berada di dalam elemen <div>, dan memberikan warna merah pada teks di dalamnya.</p>
+        <p>2. Selector div p memilih semua elemen <p> yang merupakan anak langsung dari elemen <div>, dan mengubah warna latar belakangnya menjadi kuning.</p>
+    </div>
+    <p>3. Selector div + p memilih paragraf yang langsung mengikuti elemen <div> dalam HTML, dan memberinya latar belakang abu-abu gelap.</p>
+    <p>4. Selector div ~ p memilih semua elemen <p> yang merupakan saudara (siblings) setelah elemen <div> dalam struktur HTML, dan mengubah warnanya menjadi cyan.</p>
+</body>
+</html>
